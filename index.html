@@ -1,0 +1,38 @@
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>שיחת וואטסאפ פיקטיבית</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="whatsapp-container">
+        <div class="chat-header">
+            <h2>אבישי ודוד</h2>
+        </div>
+        <div class="chat-area" id="chat-area">
+            <!-- הודעות יטענו כאן -->
+        </div>
+        <div class="chat-footer">
+            <button id="screenshot-button">📷 שמור צילום מסך</button>
+        </div>
+
+        <div id="message-modal" class="modal-overlay">
+            <div class="modal-content">
+                <h3>הוסף/ערוך הודעה</h3>
+                <textarea id="message-text" placeholder="הקלד הודעה..."></textarea>
+                <div class="sender-select">
+                    <span>נשלח ע"י:</span>
+                    <label><input type="radio" name="sender" value="david"> דוד</label>
+                    <label><input type="radio" name="sender" value="avishai"> אבישי</label>
+                </div>
+                <button id="save-message-button">שמור</button>
+                <button id="cancel-button">ביטול</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
